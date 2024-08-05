@@ -1,0 +1,612 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Playwrite+BE+VLG:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Playwrite+BE+VLG:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap"); */
+
+* {
+  box-sizing: border-box; /* Add this line */
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; /* Add this line */
+}
+header {
+  background-color: #2323238d;
+}
+
+.logoBox {
+  display: flex;
+  justify-content: center;
+}
+
+.headerLogo {
+  font-size: 30px;
+  /* font-family: "VT323", monospace; */
+  color: rgb(246, 66, 0);
+}
+
+.context {
+  /* width: 100%; */
+  position: absolute;
+  top: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.context h1,
+.context h4,
+.context p {
+  color: #fff;
+}
+
+.context h1 {
+  color: #fff;
+  font-size: 50px;
+}
+
+.context h4,
+.context p {
+  color: #fff;
+  font-size: 20px;
+}
+
+.context p {
+  color: #fff;
+  font-size: 15px;
+  padding-right: 30%;
+}
+
+.area {
+  background: rgb(0, 0, 0);
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  width: 100%;
+  height: 100vh;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(246, 66, 0, 0.537);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+.aboutUsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.aboutUsRightBox {
+  width: 40%;
+}
+
+.aboutUsRightBox img {
+  width: 90%;
+}
+
+.aboutUsLeftBox {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  text-align: left; /* Add this line */
+}
+
+.aboutUsLeftBox h2 {
+  color: rgb(246, 66, 0);
+}
+
+.aboutUsLeftBox {
+  padding-right: 90px;
+}
+
+/* ################## */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.container .card .icon {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background: rgb(213, 58, 1);
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon h4 {
+  font-size: 40px;
+}
+
+.container .card .icon .fa {
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  font-size: 80px;
+
+  color: #fff;
+}
+
+.container .card .slide {
+  width: 300px;
+
+  height: 200px;
+
+  transition: 0.5s;
+}
+
+.container .card .slide.slide1 {
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  z-index: 1;
+
+  transition: 0.7s;
+
+  transform: translateY(100px);
+}
+
+.container .card:hover .slide.slide1 {
+  transform: translateY(0px);
+}
+
+.container .card .slide.slide2 {
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  transition: 0.8s;
+
+  transform: translateY(-100px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.container .card:hover .slide.slide2 {
+  transform: translateY(0);
+}
+
+.container .card .slide.slide2::after {
+  content: "";
+
+  position: absolute;
+
+  width: 30px;
+
+  height: 4px;
+
+  bottom: 15px;
+
+  left: 50%;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background: rgb(213, 58, 1);
+}
+
+.container .card .slide.slide2 .content p {
+  margin: 0;
+
+  padding: 0;
+
+  /* text-align: center; */
+
+  color: white;
+}
+
+.container .card .slide.slide2 .content h3 {
+  margin: 0 0 10px 0;
+
+  padding: 0;
+
+  font-size: 24px;
+
+  text-align: center;
+
+  color: white;
+}
+
+.teamContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.teamContainer h3 {
+  font-size: 40px;
+}
+
+.ourProjectsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.ourProjectsTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.ourProjectsTitle h3 {
+  font-size: 40px;
+}
+
+.projectBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.projectImageBox {
+  width: 40%;
+}
+
+.projectImageBox img {
+  width: 90%;
+}
+
+.projectDataBox {
+  width: 60%;
+}
+
+.projectDataBox p {
+  width: 80%;
+}
+
+.projectDataBox span {
+  color: rgb(213, 58, 1);
+}
+
+.projectDataBox a {
+  color: white;
+}
+
+.projectDataBox a:hover {
+  color: rgb(248, 124, 79);
+}
+
+.contactUsContainer {
+  display: flex;
+  width: 100%;
+}
+
+.contactUsBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.contactUsBox h3 {
+  color: rgb(213, 58, 1);
+  font-size: 30px;
+}
+
+.contactUsLeft {
+  width: 50%;
+}
+.contactUsRight {
+  width: 30%;
+}
+
+.contactUsRight a:hover {
+  color: rgb(248, 124, 79);
+}
+
+.contactUsRight span {
+  /* color: rgb(213, 58, 1); */
+  font-size: 18px;
+}
+
+.projectBox .Res {
+  display: none;
+}
+
+/* .contactUsTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.contactUsTitle h3 {
+  font-size: 40px;
+} */
+
+/* Existing CSS remains unchanged */
+
+/* Add these media queries at the end of your CSS file */
+
+@media screen and (max-width: 1024px) {
+  .context p {
+    padding-right: 10%;
+  }
+
+  .aboutUsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutUsLeftBox,
+  .aboutUsRightBox {
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .aboutUsRightBox img {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .card {
+    margin-bottom: 30px;
+  }
+
+  .projectBox {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .projectImageBox,
+  .projectDataBox {
+    width: 100%;
+  }
+
+  .projectDataBox p {
+    width: 100%;
+  }
+
+  .contactUsBox {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .contactUsLeft,
+  .contactUsRight {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .context h1 {
+    font-size: 40px;
+  }
+
+  .context h4,
+  .context p {
+    font-size: 16px;
+  }
+
+  .context p {
+    padding-right: 0;
+  }
+
+  .aboutUsRightBox img {
+    width: 90%;
+  }
+
+  .container .card .slide {
+    width: 250px;
+  }
+
+  .icon h4 {
+    font-size: 30px;
+  }
+
+  .projectBox {
+    padding: 20px;
+  }
+
+  .contactUsBox {
+    padding: 20px;
+  }
+
+  .projectBox .Res {
+    display: block;
+  }
+
+  .projectBox .Des {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .context h1 {
+    font-size: 30px;
+  }
+
+  .context h4,
+  .context p {
+    font-size: 14px;
+  }
+
+  .container .card .slide {
+    width: 200px;
+  }
+
+  .icon h4 {
+    font-size: 24px;
+  }
+
+  .teamContainer h3,
+  .ourProjectsTitle h3 {
+    font-size: 30px;
+  }
+
+  .contactUsBox h3 {
+    font-size: 24px;
+  }
+}
+
+.projectBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectImage {
+  order: -1; /* This moves the image to the top */
+}
+
+.projectDataBox {
+  /* Add any specific styles for the text container */
+}
+
+/* Media query for larger screens if you want to revert to original layout */
+@media (min-width: 768px) {
+  .projectBox {
+    flex-direction: row;
+  }
+
+  .projectImage {
+    order: 0; /* Reset the order for larger screens */
+  }
+}
